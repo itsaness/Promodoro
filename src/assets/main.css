@@ -1,0 +1,142 @@
+*{
+  font-family: "Alan Sans", sans-serif;
+}
+body {
+  background-color: #D0F0C0;
+  display: flex;
+  justify-content: center;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  gap: 200px;
+}
+.navbar a{
+  color:unset;
+  text-decoration: none;
+}
+.navbar button{
+  color:  green;
+  border: none;
+  background-color: transparent;
+  font-size:30px;
+  cursor:pointer;
+}
+.navbar button:hover{
+  transform: scale(1.6);
+}
+#navlogo{
+  color: GREEN;
+  
+}
+.settings{
+  position: absolute;
+  height: 500px;
+  width: 360px;
+  border-radius: 30px;
+  color: white;
+  background-color: #effae9;
+}
+.settings-input{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  color: black;
+  border-bottom: 1px solid black;
+  
+}
+.settings-input input{
+  margin-top: 20px;
+  width: 50px;
+  height: 20px;
+  background-color: #effae9;
+  border-radius: 5px;
+  font-size: 17px;
+  border:none
+}
+.settings-input input:focus{
+  border:1px solid green;
+  outline: none;
+}
+.settings button{
+  margin-top: 140px;
+  margin-left: 255px;
+  height: 40px;
+  width: 70px;
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.settings button:hover{
+  background-color: #00e600;
+}
+.timer-container {
+  display: grid;
+  justify-content: center;
+  border: 3px solid green;
+  margin-top: 30vh;
+  margin-left: 50px;
+  color: green;
+  border-radius: 30px;
+  height: 250px;
+  width: 250px;
+}
+.timer-container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: lightgreen;
+  font-size: 50px;
+}
+.timer-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.timer-buttons button {
+  width: 100px;
+  height: 25px;
+  color: green;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.pages{
+  display: flex;
+  justify-content: center;
+}
+.pomodorobutton{
+  color: red;
+}
+.pages button{
+  background-color: transparent;
+  border: transparent;
+  color: black;
+  border-right: 3px solid green;
+  cursor: pointer;
+}
+.pages button.changeMode{
+  color: green;
+}
+.material-icons-outlined{
+  font-size: 50px;
+}
+/*.button-clicked{
+  background-color: red;
+}*/
+
+
+
+
+
+
+
+
+
