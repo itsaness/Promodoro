@@ -4,6 +4,7 @@ import endOfSession from "@/assets/alarm.mp3";
 let timer = null;
 let audio = new Audio(endOfSession);
 let isSettings = ref(false);
+
 const modes = {
   pomodoro: ref({
     name: "pomodoro",
@@ -63,6 +64,16 @@ let goToSettings = () => {
 };
 let switchModes = (chosenMode) => {
   currentMode.value = chosenMode;
+  if(chosenMode=="pomodoro"){
+    document.title="Pomodoro";
+  }else if(chosenMode=="short")
+{
+  document.title="Short Break";
+} else if(chosenMode=="long")
+{
+  document.title="Long Break";
+}  
+  
   resetPomodoro();
   saveSettings();
 };
@@ -87,7 +98,6 @@ onMounted(()=>{
   if(currentMode){
     currentMode.value=parsed.currentMode;
   }
-  
 })
 
 </script>
